@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HealthCheckApiController {
     @RequestMapping("/")
     public String HuranitServer() {
-        return "Hello Huranit Server!";
+        return "Hello Huranit Server!!";
     }
 
 
