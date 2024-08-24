@@ -2,6 +2,7 @@ package relife.huranit.domain.centertag.domain;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import relife.huranit.domain.center.domain.Center;
@@ -24,4 +25,5 @@ public class CenterTag {
     @ManyToOne
     @JoinColumn(name ="tag_id")
     private Tag tag;
+    
 }
