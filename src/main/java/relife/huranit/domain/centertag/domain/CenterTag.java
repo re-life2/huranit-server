@@ -25,5 +25,5 @@ public class CenterTag {
     @ManyToOne
     @JoinColumn(name ="tag_id")
     private Tag tag;
-    
+
 }
