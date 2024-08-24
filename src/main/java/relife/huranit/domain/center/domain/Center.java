@@ -25,6 +25,9 @@ public class Center {
     @Column(nullable = false ,length =50)
     private String name;
 
+    @Column
+    private String imageUrl;
+
     @Column(nullable = false , length = 50)
     private String phoneNumber;
 
