@@ -4,7 +4,7 @@ FROM openjdk:17-jdk-slim
 CMD ["./gradlew", "clean", "build", "-x", "test"]
 
 # JAR 파일 경로와 이름 설정
-ARG JAR_FILE_PATH=build/libs/relife-0.0.1-SNAPSHOT.jar
+ARG JAR_FILE_PATH=build/libs/huranit-0.0.1-SNAPSHOT.jar
 
 # JAR 파일을 컨테이너에 복사
 COPY ${JAR_FILE_PATH} app.jar
