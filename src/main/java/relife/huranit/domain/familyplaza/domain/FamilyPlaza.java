@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class familyPlaza {
+public class FamilyPlaza {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -20,6 +20,12 @@ public class familyPlaza {
 
     @Column
     private String name;
+
+    @Column
+    private String description;
+
+    @Column
+    private String applyMethod;
 
     @Column
     private String age;
