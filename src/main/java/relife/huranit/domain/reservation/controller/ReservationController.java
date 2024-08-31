@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import relife.huranit.domain.reservation.dto.request.ReservationRequestDto;
 import relife.huranit.domain.reservation.service.ReservationService;
+import relife.huranit.global.common.SuccessResponse;
 
 @RequiredArgsConstructor
 @RequestMapping("/api/reservation")
@@ -18,6 +19,6 @@ public class ReservationController {
     @PostMapping
     public ResponseEntity<?> createReservation(@RequestBody ReservationRequestDto reservationRequest) {
         reservationService.createReservation(reservationRequest);
-        return ResponseEntity.ok().build();
+        return SuccessResponse.created(null);
     }
 }
