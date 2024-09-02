@@ -9,7 +9,8 @@ public record FamilyPlazaResponseDto(
         String imageUrl,
         String description,
         String age,
-        String applyMethod
+        String applyMethod,
+        String link
 ) {
     public static FamilyPlazaResponseDto fromEntity(FamilyPlaza familyPlaza) {
         return new FamilyPlazaResponseDto(
@@ -18,7 +19,8 @@ public record FamilyPlazaResponseDto(
                 familyPlaza.getImageUrl(),
                 familyPlaza.getDescription(),
                 familyPlaza.getAge(),
-                familyPlaza.getApplyMethod()
+                familyPlaza.getApplyMethod(),
+                familyPlaza.getLink()
         );
     }
 }

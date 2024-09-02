@@ -29,4 +29,7 @@ public class FamilyPlaza {
 
     @Column
     private String age;
+
+    @Column
+    private String link;
 }
