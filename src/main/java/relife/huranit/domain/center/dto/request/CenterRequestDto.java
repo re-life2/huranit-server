@@ -6,7 +6,6 @@ public record CenterRequestDto(
 
         String search,
         List<String> tags,
-
         String district
 
 ){

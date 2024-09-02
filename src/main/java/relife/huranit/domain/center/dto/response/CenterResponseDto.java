@@ -14,8 +14,6 @@ public record CenterResponseDto(
         String addressDetail3,
         List<String> tags
 ) {
-
-    // Center와 관련된 정보를 받아 CenterResponseDto로 변환하는 메서드
     public static CenterResponseDto from(Center center) {
         List<String> tags = center.getCenterTagList().stream()
                 .map(centerTag -> centerTag.getTag().getTagName())
