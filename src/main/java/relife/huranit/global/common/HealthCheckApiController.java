@@ -18,7 +18,7 @@ public class HealthCheckApiController {
 
     @RequestMapping("/")
     public ResponseEntity<byte[]> HuranitServer() throws IOException {
-        Resource resource = new ClassPathResource("static/example.mp4");
+        Resource resource = new ClassPathResource("static/video.mp4");
         InputStream videoStream = resource.getInputStream();
         byte[] videoBytes = StreamUtils.copyToByteArray(videoStream);
 
